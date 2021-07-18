@@ -35,7 +35,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap; 
 }
 
 h1,
@@ -184,4 +183,58 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+
+@media all and (min-width: 768px) {
+    /* Tablet styles here */
+ .bottom-section {
+	flex-flow: row nowrap;
+	align-items: flex-start;
+ }
+
+ .section-one,
+ .section-two,
+ .section-three {
+	width: 33.33%;
+ }
+
+ .section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+ }
+
+ .section-two, 
+ .section-three {
+	padding: 0 2em;
+ }
+
+ p {
+	 line-height: 1.5em;
+ }
+}
+ 
+@media all and (min-width: 1200px) {
+    /* Desktop styles here */
+	header {
+		flex-flow: row nowrap;
+	}
+
+	header nav ul li {
+		flex-flow: row nowrap;
+		display: inline-flex;
+		width: auto;
+		justify-content: space-between;
+	}
+
+	header nav {
+		width: 40%;
+	}
+
+	header h1 {
+		width: 60%;
+		padding: ;
+		border-bottom: none;
+		text-align: left;
+	}
 }
